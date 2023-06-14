@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>febonicci series</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+   <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+</head>
+<body>
+     <script>
+    	let num=prompt("enter febonicci num");
+    	let a=0;
+    	let b=1;
+    	let temp;
+
+    	for(let i=1;i<=num;i++)
+    	 {
+    		 temp=a+b
+    		document.write("<br>"+a);
+    		 a=b;
+    		b=temp;
+    		
+    	 }
+    </script>
+____________________________________________________________________
+    <script>
+    	
+    	let n1=0;
+    	let n2=1;
+
+    	for(let i=1;i<=100;i++)
+    	 {
+    		 next_num=n1+n2
+    		document.write("<br>"+n1);
+    		n1=n2;
+    		n2=next_num;
+    	 }
+    </script>
+_____________________________________________________________________
+   
+
+    <script>
+
+       let first=0;
+       let second=1;
+       let all=+prompt("enter a number");
+
+        for(let i=1;i<=all;i++)
+        {
+          next=first+second;
+          document.write(first+"<br>");  //011235813213455
+
+          first=second;
+          second=next;
+        }
+  </script>
+</body>
+</html>

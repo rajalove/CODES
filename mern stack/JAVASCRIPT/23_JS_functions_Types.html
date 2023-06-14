@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js function types</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+   <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+</head>
+<body>
+
+	<script>
+		
+		//named function_________________________________
+
+		function firstName(num1,num2)
+		{
+			var anu=num1*num2;
+			return anu;
+		}
+       document.write(firstName(45,5)+"<br>")         
+ 
+
+		 var love=firstName(5,25);
+		 document.write(love);
+
+		 //_______________________________________
+
+		 //anonymous function_____________________________
+
+		 add=function(num1,num2)
+		 {
+		 	var result=num1+num2;
+		 	return result;
+
+		 }
+		 var anitha=add(5,45);
+		 document.write("<br>"+anitha);
+    
+        //________________________________
+        //IIFE function_________________________________
+
+           
+           var love2=(function product(num2,num3)
+           {
+           	 var results=num2*num3
+           	 return results;
+           })(5,4);
+          document.write("<br>"+love2);
+
+//________________________________________________
+
+             
+             (function add2(num1,num3)
+           {
+           	 var result=num1*num3
+           	 document.write("<br>"+result);
+           })(5,5);
+
+
+//______________________________________________________
+
+//arrow function_____________________________________________
+
+         var chinni=(num1,num2)=>
+         {
+            var lover=num1*num2;
+            return lover;
+         }
+         
+         var kill=chinni(20,5);
+          document.write("<br>"+kill);
+
+//__________________________________________________
+
+
+        var creation=(num3,num4)=>
+        {
+        	var alone=num3+num4;
+        	 document.write("<br>"+alone);
+        }
+        creation(10,35);
+
+ //_____________________________________________
+
+ //only one parameter(one value)__________________________________
+
+      var handsome=(num1)=>num1*num1+num1
+      document.write("<br>"+handsome(5));
+
+
+
+
+
+
+          
+	</script>
+        
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+
+<html>
+ <head>
+  <title>SCREENSIZE</title>
+ </head>
+ <body>
+  <h1 align="center">ScreenSize:<span id="count"></span></h1>
+ </body>
+
+<!--Script Code-->
+<script>
+ window.addEventListener('resize',function()
+ {
+  let screenSize=window.innerWidth;
+        document.querySelector('#count').innerText=`${screenSize} PX`;
+ });
+</script>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js DOM manipulation</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+  <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+ <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+</head>
+<body>
+
+  <!-- <div id="first">
+    <h2>this is heading</h2>
+    <p id="chinni">i am paragraph</p>
+
+ </div> -->
+
+ <div id="second">
+   <p>this is 1st paragraph</p>
+   <p>this is 2nd paragraph</p>
+
+   <p id="last">this 4th paragraph</p>
+ </div>
+
+  <div id="disert">
+  	 <h2>sahara disert</h2>
+  	 <h3 id="lost">thar disert</h3>
+  </div>
+   
+   <div id="river">
+   	 <h2 id="waste">ganga river</h2>
+   	 <h3>yamuna river</h3>
+   	 <h4>godhavari river</h4>
+   </div>
+
+   <div id="mountain">
+   	<h2>himalaya mountain</h2>
+   	<h2 id="another">k2 mountain</h2>
+   </div>
+
+   <script>
+        
+   	   // create element..........!
+          let raja=document.createElement('p')
+           console.log(raja) //here create empty paragraph tag in console
+       
+   </script>
+_______________________________________________________
+   <script>
+
+   	//some content set in element........!
+
+   	  let naresh=document.createElement('p')
+   	 naresh.innerText='i am lose my character'
+   	 console.log(naresh)//its dispay only console,just add some content in element only..
+
+   </script>
+_______________________________________________________________
+    <script>
+    	
+    	//how to append a new element..........!
+
+    	 let animal=document.createElement('p')
+          animal.innerText='i am lose my character'
+          animal.style.backgroundColor='orangered'
+   
+          let birds=document.getElementById('second')
+          birds.appendChild(animal)//display content in document,last child element idhe..
+    </script>
+
+ ___________________________________________________________
+
+     <script>
+     	
+     	// how to insert an element before another element...........!
+          
+       let india=document.createElement('h5')
+        india.innerText='its 3rd paragraph heading'
+        india.style.color='orange'
+        india.style.backgroundColor='indigo'
+        
+        let telugu=document.getElementById('second')
+
+         let last=document.getElementById('last')
+         telugu.insertBefore(india,last)
+     </script>
+
+  __________________________________________________________________
+
+  <script>
+
+  	 // how to remove an element....!
+        let lion=document.getElementById('disert')
+        lion.remove(); // disert id element completely deleted...
+  </script>
+
+  ______________________________________________________________-
+
+   <script>
+   	 
+   	 // how to remove child element....
+   	 let Sun=document.createElement('h4')
+   	 Sun.innerText='ganga is longest river in india'
+   	 Sun.style.color='blue';
+
+   	 let moon=document.getElementById('river')
+   	  moon.append(Sun)
+       
+       //remove child element
+   	  let afternoon=document.getElementById('river')
+   	   
+       let night=document.getElementById('waste')
+       night.remove();// here ganga river deleted...
+
+  
+   </script>
+
+ ______________________________________________________________________
+     
+   <script>
+   	 //repalce a element....!!
+        
+        let hills=document.createElement('h1')
+        hills.innerText='evarest mountain';
+
+        let jaya=document.getElementById('another')
+        jaya.replaceChildren(hills)//evarest mountain is replaced into k2 position..
+
+   </script>
+_______________________________________________________________
+
+
+
+<!-- <script>
+  let sekhar=document.createElement('h2')
+  sekhar.innerText='i love my self'
+  sekhar.style.color='orangered'
+
+  let rani=document.getElementById('first').appendChild(sekhar)
+   
+   let love=document.createElement('h1')
+   love.innerText='i love my geetha'
+   love.style.color='blue'
+   
+   let raja=document.getElementById('first')    // how to insert an element before another element...........!
+   kishore=raja.insertBefore(love,chinni)
+                                   
+</script> -->
+
+
+
+_______________________________________________________________________
+
+<!-- 
+
+<div id="first">
+  <h2>this is heading</h2>
+  <p id="chinni">i am paragraph</p>
+
+</div>
+
+<div id="hi">
+<h2>remove this</h2>
+</div>
+
+<div id="Nolove">
+<h2>remove child element</h2>
+<h1 id="bye">can you remove me</h1>
+<h3>i dont hsve kids please remove me</h3>
+</div>
+
+<script>
+ let sekhar=document.createElement('h2')
+ sekhar.innerText='i love my self'
+ sekhar.style.color='orangered'
+
+ let rani=document.getElementById('first').appendChild(sekhar)
+  
+  let love=document.createElement('h1')
+  love.innerText='i love my geetha'
+  love.style.color='blue'
+  
+  let raja=document.getElementById('first')
+  kishore=raja.insertBefore(love,chinni)
+  
+
+
+  let frog=document.getElementById('hi')
+  frog.remove();
+ 
+
+
+  let father=document.getElementById('Nolove')
+  father.style.color='orange'
+
+  let son=document.getElementById('bye')
+  son.style.color='green'
+  son.remove();
+</script> -->
+
+
+
+
+
+
+
+
+
+<!-- <div id="first">
+  <h2>this is heading</h2>
+  <p id="chinni">i am paragraph</p>
+
+</div>
+
+<div id="hi">
+<h2>remove this</h2>
+<h3>remove this element</h3>
+<h3>create wonders</h3>
+</div>
+
+<div id="Nolove">
+<h2>remove child element</h2>
+<h1 id="bye">can you remove me</h1>
+<h3>i dont hsve kids please remove me</h3>
+</div>
+
+<script>
+ let sekhar=document.createElement('h2')
+ sekhar.innerText='i love my self'
+ sekhar.style.color='orangered'
+
+ let rani=document.getElementById('first').appendChild(sekhar)
+  
+  let love=document.createElement('h1')
+  love.innerText='i love my geetha'
+  love.style.color='blue'
+  
+  let raja=document.getElementById('first')
+  kishore=raja.insertBefore(love,chinni)
+  
+
+  let konetisekhar=document.createElement('h2')
+ konetisekhar.innerText='i am replaced'
+ konetisekhar.style.color='yellow'
+  let frog=document.getElementById('hi')
+  frog.replaceChildren(konetisekhar);  //when we are using replace element,all elemts 
+                                       //willbe replaced
+ 
+
+
+  let father=document.getElementById('Nolove')
+  father.style.color='orange'
+
+  let son=document.getElementById('bye')
+  son.style.color='green'
+  son.remove();
+</script> -->
+
+
+_______________________________________________________
+
+
+<!-- <div id="first">
+  <h2>this is heading</h2>
+  <p id="chinni">i am paragraph</p>
+
+</div>
+
+<div id="hi">
+<h2>remove this</h2>
+<h3>remove this element</h3>
+<h3 id="hey">create wonders</h3>
+</div>
+
+<div id="Nolove">
+<h2>remove child element</h2>
+<h1 id="bye">can you remove me</h1>
+<h3>i dont hsve kids please remove me</h3>
+</div>
+
+<script>
+ raja=document.createElement('h1')
+ raja.innerText='good morning____________'
+ raja.style.color='blue'
+
+
+ rani=document.getElementById('first').appendChild(raja);
+
+ ra=document.createElement('h1')
+ ra.innerText='good afternoon____________'
+ ra.style.color='orange'
+
+ let raju=document.getElementById('hi')
+ let chav=document.getElementById('hey')
+ raju.insertBefore(ra,chav);
+// pagal=raju.insertBefore(ra,hey)
+ 
+let raj=document.getElementById('Nolove')
+ raj.remove();
+ 
+
+ sekhar=document.createElement('h1')
+ sekhar.innerText='good night____________'
+ sekhar.style.color='skyblue'
+
+ let killer=document.getElementById('hey')
+ killer.replaceChildren(sekhar);
+</script> -->
+</body>
+</html>

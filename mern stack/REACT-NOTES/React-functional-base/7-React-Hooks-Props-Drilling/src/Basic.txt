@@ -1,0 +1,12 @@
+import React from "react";
+
+let Basic=()=>
+{
+    return(
+        <React.Fragment>
+            <h1>hi raja</h1>
+        </React.Fragment>
+    );
+};
+
+export default Basic;

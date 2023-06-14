@@ -1,0 +1,26 @@
+*{
+    font-family: "comic sans MS",sans-serif;
+}
+.landing-page
+{
+    background: white url('./assets/img/bg-realb.jpg') no-repeat scroll center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+.wrapper
+{
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+}
+.footer-page
+{
+    background: white url("./assets/img/beach.jpg") no-repeat center;
+    background-size:cover;
+    color: white;
+}
+.footer-wrapper
+{
+background: rgba(0,0,0,0.5);
+height: 100%;
+}

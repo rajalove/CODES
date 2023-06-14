@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>logical operator</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+  <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+ <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+</head>
+<body>
+    
+    <script>
+    	 //a&&b________________________
+
+    	   a=5;
+    	   b=2;
+    	   c=5;
+    	   d=4;
+
+    document.write(a&&b);          //OP:2;
+    document.write(`<br>`);
+    
+   
+     document.write( a>b && c<b);    //OP:false;
+    document.write(`<br>`);
+
+     document.write( a>b && c>b);    //OP:true;
+    document.write(`<br>`);
+
+     document.write( d<a && b<c);    //OP:true;
+    document.write(`<br>`);
+
+    document.write(`<hr>`);
+
+    //a||b ___________________________
+
+           a=5;
+    	   b=9;
+    	   c=8;
+    	   d=3;
+    	   e=3;
+
+    document.write(a||b);            //OP:5;
+    document.write(`<br>`);
+    
+   
+     document.write( a>b || c<b);    //OP:true;
+    document.write(`<br>`);
+
+     document.write( a>b || c>b);    //OP:false;
+    document.write(`<br>`);
+
+     document.write( d<a || b<c);    //OP:true;
+    document.write(`<br>`);
+
+    document.write( d==e || b<c);    //OP:true;
+    document.write(`<br>`);
+
+  document.write(`<hr>`);
+
+    // !a ____________________________________________
+
+       a=true;
+       b=false;
+       c=5<9;
+       d=1>2;
+       e=2>5;
+       f=6===6;
+
+         document.write(!a);       //OP:false
+          document.write(`<br>`);
+         document.write(!b);       //OP:true
+         document.write(`<br>`);
+         document.write(!c);       //OP:false
+         document.write(`<br>`);
+         document.write(!e);       //OP:true
+         document.write(`<br>`);
+         document.write(!d);       //OP:true
+         document.write(`<br>`);
+         document.write(!f);       //OP:false;
+          document.write(`<br>`);
+         document.write(`<hr>`);
+
+
+    </script>
+
+</body>
+</html>

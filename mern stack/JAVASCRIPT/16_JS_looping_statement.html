@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js looping statement</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+   <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+</head>
+<body>
+		
+	<script>
+		  //for loop___________________________________________________
+
+		     let anu='';
+
+		    for(let anitha=1; anitha<=10; anitha++)
+		    {
+		    	document.write(anitha+"<br>");
+		    }       
+
+		    document.write("<hr>")                           // OP:12345678910;
+	</script>
+_____________________________________________________________________________________
+
+     <script>
+     	  document.write("<br>")
+     	  
+     	let output="";
+		for(let i=9;i<=10;i++){
+            document.write(i+"<br>")
+          output=output+i
+           //output+=`${i}`;                    //OP:9,10
+
+		}
+
+		document.write("<hr>")
+     </script>
+ ________________________________________________________________________
+	<script>
+
+		var sum="";
+        for(let counter=10;counter<=20;counter++)
+        {
+        	sum=sum+"<br>"+counter
+        }
+       document.write(sum);      
+
+        document.write("<hr>")               //OP:11121314151617181920
+
+	</script>
+______________________________________________________________________
+	<script>
+		document.write("print 1 to 10 numbers")
+		document.write("<br>")
+      
+		let outputs=2;
+
+        for(let i=1;i<=5;i++)
+        {
+
+        	outputs=outputs+i
+
+        }
+       document.write(outputs);      
+
+        document.write("<hr>")               //OP:12345678910
+
+	</script>
+_____________________________________________________________________
+         while........................
+      print 1 to 10 numbers
+      <script>
+      	 document.write("<br>")
+      	  //while................................................................
+
+      	  let love=1;
+
+      	   while(love<=10)
+
+      	   {
+             document.write(love+"<br>");
+             love++;
+      	   }
+
+  document.write("<hr>")
+      </script>
+_________________________________________________________________________
+        print 1 t0 100 numbers
+        <script>
+        	 document.write("<br>")
+
+        	 let a=1;
+      	   while(a<=100)
+
+      	   {
+             document.write(a);
+             a++;
+      	   }
+
+  document.write("<hr>")
+        </script>
+
+_________________________________________________________________________
+     
+        <script>
+        	 document.write("<br>")
+
+        	 let b=1;
+      	   while(b<=100)
+
+      	   {
+             document.write("i love anitha ");
+             b++;
+      	   }
+
+  document.write("<hr>")
+        </script>
+__________________________________________________________________________________
+
+ do while loop...................
+
+  <script>
+  	 document.write("<br>")
+
+
+  	 var d=1;
+  	 do{
+  	 	document.write(d);
+  	 	 document.write("<br>");
+  	 	d++;
+  	 }
+  	 while(d<=10);
+
+  	
+
+  </script>
+__________________________________________________________________
+
+ 
+   <script>
+    	 document.write("<br>")
+    	let count=1;
+    	do{ 
+    		let num=+prompt("enter a number");
+    		
+    		document.write("enter num: "+num+"<br>")
+    		count=count+num
+
+    	}
+    	while(count>0);
+
+    </script>
+
+  _________________________________________________________
+for in loop.........................................
+array
+  <script>
+  	 document.write("<br>")
+  	//for in................................................................
+
+  	var fruits=['mango','apple','banana','kiwi'];
+
+  	     for(index in fruits)
+  	     {
+  	     	document.write(index+": "+fruits[index]+" <br>")   //0123 anevi :index(element positon)
+  	     }
+  </script>
+
+  _______________________________________________________________________
+object
+
+
+  <script>
+  	 document.write("<br>")
+
+
+  	 var raja={'100':"love",'105':"i love u",'anu':"love",'raja':"loves anu",}
+
+  	 for(key in raja)
+  	 {
+  	 	document.write(key+": "+raja[key]+"<br>")
+  	 }
+  </script>
+______________________________________________________________________
+for of loop
+array
+
+<script>
+
+  	 document.write("<br>")
+  	//for of................................................................
+
+  	var fruty=['mango','apple','banana','kiwi'];
+
+  	     for(ele of fruty)
+  	     {
+  	     	document.write(ele+"<br>")   //so here we cant print element position here,
+  	     	                             //elements only printed........
+  	     }                                   
+
+</script>
+</body>
+</html>

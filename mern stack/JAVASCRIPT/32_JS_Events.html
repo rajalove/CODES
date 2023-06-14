@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js events</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+   <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+
+</head>
+<body>
+   
+   <h3 class="text-success">INLINE EVENT HANDLE inside html only</h3>
+     
+     <div class="text-center mt-5">
+   	<button onClick="document.body.style.backgroundColor='orange' " class="btn btn-primary">
+   	  click here</button>
+   	   </div>
+
+ ________________________________________________________________________________
+   
+   <h3 class="text-success">FUNCTION BASE html</h3>
+     
+     <div class="text-center mt-5">
+   	<button onClick="raja()" class="btn btn-primary">
+   	  click here</button>
+   	   </div>
+
+   	   <script>
+   	   	  function raja()
+   	   	  {
+   	   	  	document.body.style.backgroundColor='red' ;
+   	   	  }
+   	   </script>
+
+  ____________________________________________________________________________________
+
+    <h3 class="text-warning">USING EVENT PROPERTIES inside js</h3>
+     
+     <div class="text-center mt-5">
+   	<button id="b1" class="btn btn-danger">
+   	  click here</button>
+   	   </div>
+
+   	   <script>
+   	   	  
+   	   	  let btn=document.getElementById('b1')
+   	   	  btn.onclick=dog;
+
+   	   	  function dog()
+   	   	  {
+   	   	  	document.body.style.backgroundColor='purple' ;
+   	   	  }
+   	   </script>
+
+___________________________________________________________________________________
+   
+    <h3 class="text-warning">USING EVENT PROPERTIES anonymous Function</h3>
+     
+     <div class="text-center mt-5">
+   	<button id="b2" class="btn btn-danger">
+   	  click here</button>
+   	   </div>
+
+   	   <script>
+   	   	  
+   	   	  let killer=document.getElementById('b2')
+   	   	  killer .onclick=function()
+   	   	  {
+   	   	  	document.body.style.backgroundColor='yellow' ;
+   	   	  }
+   	   </script>
+
+_____________________________________________________________________________
+
+ <h3 class="text-warning">USING EVENT PROPERTIES inside js</h3>
+       <div id="lion"class="text-center mt-5">
+   	<button id="b3"class="btn btn-success">
+   	  click here</button>
+   	   </div>
+
+   	   <div class="form-group text-center mt-3">
+   	   	 name:<input id="forms" name="">
+   	   </div>
+  
+
+
+
+   <script>
+   	  let lovely=document.getElementById('b3')
+   	  lovely.onclick=sunitha;
+       
+    let naresh=document.getElementById('forms')
+        naresh.onfocus=mom;
+
+   	    function sunitha(){
+   	    	document.body.style.backgroundColor='indigo'
+
+   	    }
+
+      function mom(){
+      	 forms.style.backgroundColor='yellow'
+      }
+   </script>
+
+
+</body>
+</html>

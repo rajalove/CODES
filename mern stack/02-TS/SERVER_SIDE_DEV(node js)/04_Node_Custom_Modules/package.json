@@ -1,0 +1,19 @@
+{
+  "name": "01-Node-Server-Creation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+    "start": "nodemon server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^16.7.1",
+    "ts-node": "^10.2.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}

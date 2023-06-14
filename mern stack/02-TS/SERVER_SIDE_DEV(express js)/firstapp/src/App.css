@@ -1,0 +1,48 @@
+/* Navbar CSS Styles*/
+
+.navbar
+{
+  padding: 10px!important;
+}
+
+.navbar a{
+  color: white;
+  text-decoration: none;
+}
+
+.collapse .navbar-nav .navbar-item .nav-link
+{
+  color:white;
+}
+
+.landing
+{
+  background: white url('Assets/basket.jpg') no-repeat scroll center;
+  background-size: cover;
+  height: 100vh;
+  color: lightgreen;
+  text-shadow: 0 0 10px white;
+}
+
+.wrapper
+{
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+}
+
+.wrapper p{
+  font-size: 20px;
+}
+
+.wrapper h3{
+  font-size: 50px;
+}
+
+.custom{
+  height: 130px;
+  width: 100%;
+}
+
+.fa{
+  padding-right: 5px;
+}

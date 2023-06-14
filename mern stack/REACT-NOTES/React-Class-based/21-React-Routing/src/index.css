@@ -1,0 +1,18 @@
+*{
+    font-family: "comic sans MS",sans-serif;
+    
+   
+}
+div.landing-page{
+    background: url(./assets/img/lady.jpeg) no-repeat scroll center;
+    background-size: cover;
+    height: 100vh;
+    color: rgb(248, 31, 31);
+}
+div.wrapper{
+    background: rgba(0,0,0,0.5);
+    height: 100vh;
+}
+/* p.raja{
+   
+} */

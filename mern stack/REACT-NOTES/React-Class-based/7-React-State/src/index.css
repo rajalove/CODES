@@ -1,0 +1,28 @@
+*{
+    font-family: "comic sans MS",sans-serif;
+}
+
+.card
+{
+    background: linear-gradient(45deg,rgb(243, 243, 247),rgb(240, 217, 10));
+ 
+    
+}
+.card-body li
+{
+    background: linear-gradient(45deg,lightpink,rgb(34, 6, 6));
+    color: white;
+
+    box-shadow: 0 0 10px rgb(29, 4, 4);
+}
+.col-md-4 .card
+{
+    box-shadow: 12px 15px 10px 1px rgb(196, 165, 165);
+}
+.multicolor-text {
+    background:linear-gradient(to right, violet,indigo, blue, green,yellow,orange, red);
+    background-clip: text;
+    color: transparent;
+}
+
+

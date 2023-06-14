@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.12",
+    "express": "^4.17.1",
+    "node": "^17.2.0",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0"
+  },
+  "name": "01_express_server_creation",
+  "version": "1.0.0",
+  "main": "server.ts",
+  "scripts": {
+    "start": "nodemon server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

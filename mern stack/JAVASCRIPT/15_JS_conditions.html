@@ -1,0 +1,344 @@
+b<!DOCTYPE html>
+<html>
+<head>
+	<title>Js conditions</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+  <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+ <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+</head>
+<body>
+      
+	<script>
+		 //if.........ex (1)
+
+		/*
+		 var a=prompt("enter anything");
+
+         if(a<5)
+         {
+         	document.write("it is succefull")
+         }
+         */
+
+   // ____________________________________________________________________
+
+
+     //if.........ex (2)
+
+		/*
+		 var b=10;
+		 var c=20;
+
+         if(b===c)
+         {
+         	document.write("a and b both are same")    //OP:nothing...because its not same
+         }
+         */
+
+    //____________________________________________________________________
+
+    //if else.........(ex1)
+
+    /*
+    var a=prompt("enter value")
+
+     if(a>0)
+     {
+       alert("you enter is number is: "+a)
+       
+     }
+     else{
+     	 alert("enter valid number");   //OP:if you are enter the value more than 0,in
+     }                                  //    if statement is excuted...
+                                        //lessthan 0,else statement will be excuted...
+    */
+
+    //___________________________________________________________________________
+
+      //if else.........(ex2)
+    /*
+      let boyAge=22;
+      let girlAge=20;
+
+      if(boyAge>21 && girlAge>18)
+      {
+      	document.write("lovers are eligible for marriage")
+      }
+      else{
+      	document.write("lovers are not eligible for marriage")
+      }    
+                                           //OP:lovers are eligible for marriage
+
+      */
+
+   //____________________________________________________________________
+
+  
+  //if-else if-else........(ex1)
+
+   /* let score=prompt("enter marks here")
+    let grade;
+      
+      if(score>=90)
+      {
+      	alert("grade:A "+"marks: "+score);
+      }
+     else if(score>=80)
+     {
+     	alert("grade:B "+"marks: "+score);
+     }
+      else if(score>=70)
+     {
+     	grade="C"
+     }
+      else if(score>=60)
+     {
+     	grade="D"
+     }
+     else{
+     	grade="F"
+     }
+     document.write("your marks: "+score +" grade: "+grade);
+     */
+
+  //_____________________________________________________________________________
+
+
+         //switch.....(ex1)
+
+        
+         // let num1=+prompt("enter first value");
+         // let num2=+prompt("enter 2nd value");
+         // let work=prompt("enter which work we do:/+/-/*/ /")
+
+         /// switch(work)
+         // {
+         // 	case'+':
+         // 	alert("adding of two numbers:"+(num1+num2));
+         // 	break;
+         
+         // case'-':
+         // 	alert("subtraction of two numbers:"+(num1-num2));
+         // 	break;
+         
+         // case'*':
+         // 	alert("multification of two numbers:"+(num1*num2));
+         // 	break;
+         
+         // case'/':
+         // 	alert("division of two numbers:"+(num1/num2));
+         // 	break;
+
+         // 	default:
+         	
+         // 	  alert("enter vaild operation work")
+ 
+         // }
+         //  
+//________________________________________________________________________________
+
+
+      //switch.....(ex2)
+      let a=+prompt("enter first number");
+		let b=+prompt("enter second number");
+		let action=prompt("what action you do: + , -, *, /")
+
+		switch(action)
+		{
+			case'+':
+			   alert((a+b));
+			   break;
+
+			   case'-':
+			   alert((a-b));
+			   break;
+
+			   case'*':
+			   alert((a*b));
+			   break;
+
+			   case'/':
+			   alert((a/b));
+			   break;
+
+			   default:
+			     alert("its not valid number")
+		}
+
+	</script>
+
+       	<script>
+
+		let day= new Date().getDay();
+		console.log(day)
+		let today='today is: ';
+
+		 switch(day)
+		 {
+		 	case 1:
+		 	today +='monday'
+		 	break;
+
+		 	case 2:
+		 	today +='tuesday';
+		 	break;
+
+		 	case 3:
+		 	today +='wednesday';
+		 	break;
+
+		 	case 4:
+		 	today +='thursday';
+		 	break;
+
+		 	case 5:
+		 	today +='friday';
+		 	break;
+
+		 	case 6:
+		 	today +='sarturday';
+		 	break;
+
+		 	case 7:
+		 	today +='sunday';
+		 	break;
+
+		 	default:
+		 	  today +='invalid day';
+
+		 }
+		 console.log(today);
+
+
+		  
+	</script>
+
+____________________________________
+
+<script>
+    
+       
+       let Marks=+prompt("enter marks")
+
+       if(Marks>100)
+       {
+        Grade="none of above <br>";
+       }
+       else if(Marks>=90)
+       {
+        Grade=" A grade <br>";
+       }
+        else if(Marks>=80)
+       {
+        Grade=" B grade <br>";
+       }
+        else if(Marks>=70)
+       {
+        Grade=" C grade <br>";
+       }
+        else if(Marks>=60)
+       {
+        Grade=" D grade <br>";
+       }
+        else if(Marks>=50)
+       {
+        Grade=" E grade <br>";
+       }
+        else if(Marks<36)
+       {
+        Grade=" fail <br>";
+       }
+
+       else
+       {
+        Grade="fail <br>";
+       }
+       document.write("in examination :"+Grade +" getting marks: "+Marks)
+
+</script>
+
+__________________________________________________________________
+ <script>
+    
+  
+    let score=+prompt("enter your Marks for grade")
+
+     switch(true)
+     {
+      case score>100:
+          grade=" please select below 100 marks"
+      break;
+
+      case score>90:
+          grade="A"
+      break;
+
+      case score>80:
+          grade="B"
+      break;
+
+      case score>60:
+          grade="C"
+      break;
+
+      case score>50:
+          grade="D"
+      break;
+
+      case score>36:
+          grade="E"
+      break;
+
+       case score<36:
+         grade="failed"
+       break;
+
+          default:
+          grade="fail"
+      break;
+     }
+     document.write("in examination Marks :"+score +"<br>"
+                     +"marks wise Grade :"+grade)
+
+     
+  </script>
+
+  ____________________________________________
+
+  <script>
+       
+        let num1=+prompt("enter num1")
+         let num2=+prompt("enter num2")
+          let total=prompt("what action you do:+,-,*, /")
+        
+
+          switch(total)
+          {
+             case "+":
+               alert("adding:"+(num1+num2))
+               break;
+
+               case "-":
+              alert("substration: "+(num1-num2))
+               break; 
+
+               case "*":
+               alert("multification "+(num1*num2))
+               break;
+
+               default:
+               alert("no value")
+               break;
+          }
+         
+
+         
+
+  </script>
+          
+	
+</body>
+</html>

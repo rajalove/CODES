@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS SCOPES</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+  <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+ <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+</head>
+<body>
+
+	<script>
+		//block level scope________________________________
+
+      /*  
+       {
+       	 let a=20;
+        document.write(a);  O.P:20 this is block level scope
+       }
+       */
+//...............................................
+      /*
+    let a=10;
+  {
+    let a=35;
+    document.write(a);  O.P:35
+  }
+  */
+//.................................
+        
+        /*
+          let a=25;
+        {
+        document.write(a);  //O.P:25
+       }
+       */  
+//......................................
+        /*
+        {
+       	 let a=40;
+       	 let b=30;
+        document.write(a); // O.P:40
+       }
+       document.write(b);  // O.P:Uncaught ReferenceError: b is not defined(error)
+      */
+//......................................
+       
+       /*
+       {
+       	 const a=15;
+        document.write(a);  //O.P:15 this is block level scope
+       }
+       */
+
+//.......................................
+        /*
+    const a=10;
+   {
+    const a=25;
+    document.write(a);     //O.P:25
+    }
+    */
+//..........................................
+       
+       /*
+       const a=20;
+        {
+      
+        document.write(a); // O.P:20
+       }
+       */
+ //.....................................
+        /*
+        {
+        const a=10;
+       	 const b=18;
+        document.write(a); // O.P:10
+        }
+       document.write(b);  // error
+       */
+//.........................................
+       
+       //function level scope____________________________________
+    
+    /*
+        {
+        var a=20;
+       	var b=12;
+        document.write(a); // O.P:20
+       }
+       document.write(b);  // O.P:12   //function level scope
+        */
+//........................................
+        var a=14;
+       	var b=25;
+          {
+    
+        document.write(a); // O.P:14
+       }       
+        document.write(b); // O.P:25
+
+	</script>
+
+</body>
+</html>

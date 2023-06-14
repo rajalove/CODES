@@ -1,0 +1,42 @@
+
+body{
+    background-image:url(https://rukminim1.flixcart.com/image/416/416/kfwvcsw0/stencil/m/a/b/1-narrow-tendril-wall-stencil-reusable-wall-painting-stencil-for-original-imafw92vc7mbzseb.jpeg?q=70);
+    background-size: cover;
+    font-family: "comic sans MS",sans-serif;
+    padding: 0px;
+}
+
+h1{
+    font-size: 100px;
+    text-align: center;
+    
+}
+p{
+    font-size: 40px;
+    text-align: center; 
+    margin-top: -10px;
+}
+
+nav a{
+    color: rgb(255, 240, 251);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px;
+}
+
+nav{
+    padding: 15px;
+}
+
+
+h1{
+    letter-spacing: 15px;
+    color: rgba(69, 248, 9, 0.504);
+ }
+ p{
+     margin:100 auto;
+     height: 50vh;
+     
+    
+ }
+

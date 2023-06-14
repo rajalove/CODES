@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js pattren</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+   <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+</head>
+<body>
+    <script>
+    	/*
+    	var rows=5;
+    	for(var i=1;i<=rows;i++)
+    	{
+    		for(var k=1;k<=(rows-i);k++)
+    		{
+    			document.write("&nbsp;");          *
+    		}	                                  * *
+    	  for(var j=1;j<=i;j++)                  * * *
+    	  {                                     * * * *
+    	  	document.write("   *   ")          * * * * *
+    	  }
+    	  document.write("<br>")
+    	}
+    	*/
+
+    	/*var rows=5;
+    	for(var i=1;i<=rows;i++)
+    	{
+    		for(var k=1;k<=(rows-i+50);k++)
+    		{                                        //same..but its printed middle part
+    			document.write("&nbsp;");              1
+    		}	                                      2 2
+    	  for(var j=1;j<=i;j++)                      3 3 3
+    	  {                                         4 4 4 4
+    	  	document.write( i+"     ")             5 5 5 5 5
+    	  }
+    	  document.write("<br>")
+    	}
+    	*/
+        
+
+        /*
+        var rows=5;
+    	for(var i=1;i<=rows;i++)
+    	{
+    		for(var k=1;k<=(rows+50);k++)
+    		{                                        1
+    			document.write("&nbsp;");            22
+    		}	                                     333
+    	  for(var j=1;j<=i;j++)                      4444
+    	  {                                          55555
+    	  	document.write( i+"     ")
+    	  }
+    	  document.write("<br>")
+    	}
+    	*/
+
+        /*
+    	let num=3;
+    	let anu=1;
+    	for(let a=1;a<=num;a++)
+    	{                                      // normal 1 to 10 numbers.......
+    		for(let s=1;s<=5;s++)             1 2 3 4 5    
+    		{                                 6 7 8 9 10 
+    			document.write(anu+" ");      11 12 13 14 15
+    			anu=anu+1;                   
+    		}                                    
+    		document.write("<br>")             
+    	}
+        */
+   
+        /*
+        let num=2;
+    	let anu=2;
+    	for(let a=1;a<=num;a++)
+    	{
+    		for(let s=1;s<=5;s++)                //2nd table
+    		{                                    
+    			document.write(anu+" ");          2 4 6 8 10
+    			anu=anu+2;                        12 14 16 18 20
+    		}
+    		document.write("<br>")
+    	}
+    	*/
+        
+
+        /*
+    	let rows=4;
+        let num=1;
+    	for(let start=1;start<=rows;start++)
+    	{
+    		for(let space=1;space<=(rows-start);space++)         1
+    		{                                                   2 3
+    			document.write("&nbsp; ")                      4 5 6
+    		}                                                 7 8 9 10  
+    		for(let value=1;value<=start;value++)             
+    		{                                              
+    			document.write(num+" ");                      
+    			num=num+1;                                  
+    		}
+    		document.write("<br>")
+    	}
+    	*/
+    	let rows=5;
+        let num=1;
+    	for(let start=1;start<=rows;start++)
+    	{
+    		for(let space=1;space<=(rows-start);space++)
+    		{
+    			document.write("&nbsp; ")
+    		}
+    		for(let value=1;value<=start;value++)
+    		{
+    			document.write("* ");
+    			
+    		}
+    		document.write("<br>")                    //diamond
+    	}
+
+    	for(let i=1;i<=rows;i++)
+    	{
+    		for(k=1;k<=(5-i);k++)
+    		{
+    			document.write(" * ")
+    		}
+    		document.write("<br>")
+    	}
+    </script>
+</body>
+</html>

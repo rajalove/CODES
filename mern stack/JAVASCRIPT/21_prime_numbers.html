@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>js prime numbers</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+  <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+ <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+</head>
+<body>
+	 
+	 <script>
+/*var num;
+var check=0;
+var num=16;
+
+for(i=2; i<num; i++)
+{
+  if(num%2==0)
+  {
+    check++; 
+  }
+}
+if(check==2)
+  document.write(num + " is a Prime Number");
+else
+  document.write(num + " is not a Prime Number");*/
+
+/*var num=55;
+var check=0;
+
+
+for(i=2; i<num; i++)
+{
+
+  if(num%2===0)
+  {
+    check++;
+  
+  }
+}
+if(check===2)
+  {
+	document.write(num + " is a Prime Number");
+  }
+else
+ {
+	 document.write(num + " is not a Prime Number");
+ }
+*/
+
+/*function isPrime(num) {
+  for(var i = 2; i < num; i++)
+    if(num % i === 0) 
+    {
+    		return false;
+    }
+  return num > 1;
+}
+  document.write(isPrime);*/
+
+/*var num=100;
+var prime;
+for(var i=2; i<num;i++)
+{
+	 prime=1
+	for(var j=2;j<=i/2;j++)
+	{
+     if(i%j===0)
+     {
+     	prime++;
+     	break;
+     }
+	} 
+
+	if(prime===1)
+	{
+		document.write(i+"<br>")
+	}
+
+}*/
+
+
+ /*
+ let num=100;
+		
+         
+         for(let i=1;i<num;i++)
+         {
+         	prime=1;
+         	for(let j=2;j<=i/2;j++)
+         	{
+         		if(i%j===0)
+         		{
+         		  prime++;
+         		  break;
+         		}
+         	}
+         	if(prime===1)
+         	{
+         		document.write(i+"<br>")
+         	}
+         }*/
+
+       let num=100;
+   
+       for(let i=1;i<=num;i++)
+       {
+        b=0;
+        for(let j=2;j<=i/2;j++)
+        {
+          if(i%j===0)
+          {
+              b++;
+              break;
+          } 
+        }
+
+        if(b===0)
+          {
+            document.write("<br>"+i)
+          }
+          else
+          {
+            document.write("<br>"+i+"not prime")
+          }
+       }
+
+
+
+
+/*let num;
+let a=2;
+
+for(let num=2;num<100;num++)
+{
+	a=2;
+	while(a<num)
+	{
+		if(num%a===0)
+		{
+			break;
+			a++;
+		}
+	}
+	if(a===num)
+	{
+		document.write(num+"<br>")
+	}
+}
+*/
+
+
+
+
+//real 
+
+/*
+<script>
+
+     let num=23;
+     let check=0;
+
+     for(let i=1;i<=num;i++)
+     {
+      if(num%i==0)
+      {
+        check++;
+      }
+     }
+     if(check==2)
+     {
+      document.write(num+"prime number")
+     }
+  else
+  {
+   document.write(num+"not prime")
+ }
+
+
+*/
+
+/*
+
+ <script>
+
+     let num=prompt("enter a number");
+     let check=0;
+
+     for(let i=1;i<=num;i++)
+     {
+      if(num%i==0)
+      {
+        check++;
+      }
+     }
+     if(check==2)
+     {
+      document.write(num+": "+"is a prime number")
+     }
+  else
+  {
+   document.write(num+": "+"is not prime number")
+ }
+
+  </script>*/
+
+</script>
+
+<!-- <script>
+
+       
+  let love=prompt('enter a number');
+  
+  for(let i=1;i<=love;i++)
+  {
+      check=1;
+      
+      for(let j=2;j<=i/2;i++)
+      {
+          if(i%j===0){
+              check++;
+              break;
+          }
+      }
+      if(check===1)
+      {
+          document.write(i+ "its prime"+"<br>")
+      }
+      else{
+          document.write(i+ "its not prime"+"<br>")            // 2,4,6,8 prime numbers checking code
+      }
+  }
+  
+  
+      </script> -->
+</body>
+</html>

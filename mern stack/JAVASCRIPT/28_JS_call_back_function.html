@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CALL BACK FUNCTION</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+  <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+ <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+
+</head>
+
+<body>
+
+	<script>
+		function raja(a)
+    	{
+          a()
+    	}
+
+    	raja(function love(){
+                
+                console.log("this is call back function");
+    	      
+    	      }
+    	);	
+
+	</script>
+   --------------------------------------------------------------
+  
+  <script>
+  	function first(love){
+
+    	    	love()
+                
+                console.log("this is first");
+    	      
+    	      }
+          
+
+    	 function second(){
+                
+                console.log("this is second");
+    	      
+    	      }
+        first(second);
+  </script>
+-----------------------------------------------------------
+
+       <script>
+       	
+       let a=20;
+    	let b=40;
+     	
+       function add(a,b)
+       {
+       	console.log(a+b)
+       }	
+       function multiply(a,b)
+       {
+       	console.log(a*b)
+       }
+
+       function calculate(n1,n2,operation)
+       {
+         operation(n1,n2)
+       }
+
+       //calculate(a,b,multiply)
+        calculate(5,10,add)
+       //calculate(5,10,multiply)
+       </script>
+ --------------------------------------------------------------------
+
+<script>
+	
+         function sum(a,b)
+         {
+         console.log(b())
+         	console.log(a+b)
+         }
+
+        sum(4,function()
+        	{
+        		console.log("hallo")
+        	});
+      
+</script>
+
+-----------------------------------------------------
+  <script>
+  	 function anu(a,b)
+       {
+
+         alert(a+b)
+       }
+       function raja(a,b){
+        alert(a*b)
+       }
+       function love(n1,n2,n3)
+       {
+        n3(n1,n2);
+       }
+      love(4,5,raja)
+  </script>
+
+------------------------------------------------------
+<script>
+	
+          function add(a,b)
+         {
+           document.write(a+b +"<br>")
+         }
+
+           function multiply(a,b)
+         {
+           document.write(a*b)
+         }
+
+           function subtraction(a,b)
+         {
+           document.write(a-b)
+         }
+
+       
+         function both(num1,num2,operator)
+         {
+            operator(num1,num2)
+         }
+
+      both(6,4,multiply)
+</script>
+
+
+-------------------------------------------------------------
+    <script>
+        
+        function first(a,b,c)
+        {
+          setTimeout(function()
+          {
+          	let next=a+b
+            console.log(next)
+           c(next)
+
+          },2000)
+        } 
+       let res=first(5,5,second)
+
+       function second(num)
+       {
+         console.log(num*num)
+       }
+ 
+       
+    </script>
+
+    _________________________________________
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+*{
+    font-family: "comic sans MS",sans-serif;
+   
+}
+.card-body img
+{
+    margin-top: -100px;
+   
+}
+div.loves{
+    position: sticky;
+    top: 0;
+}

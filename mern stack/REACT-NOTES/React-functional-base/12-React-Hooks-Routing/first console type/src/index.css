@@ -1,0 +1,14 @@
+*{
+    font-family:"comic sans MS",sans-serif;
+}
+div.landing-page{
+    background: url('https://wallpaperaccess.com/full/1196156.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+div.wrapper{
+    background: rgba(0,0,0,0.5);
+    height: 100vh;
+}

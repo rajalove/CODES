@@ -1,0 +1,19 @@
+{
+  "name": "1-node-basic-file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server.js",
+  "scripts": {
+    "start": "nodemon Server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "gravatar": "^1.8.2",
+    "node": "^20.2.0",
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,20 @@
+*{
+    font-family: "comic sans MS",sans-serif;
+}
+
+.card
+{
+    background: linear-gradient(45deg,rgb(116, 116, 213),lightpink);
+    
+}
+.card-body li
+{
+    background: linear-gradient(45deg,lightpink,rgb(34, 6, 6));
+    color: white;
+
+    box-shadow: 0 0 10px rgb(254, 254, 254);
+}
+.col .card
+{
+    box-shadow: 12px 15px 10px 1px rgb(0, 0, 0);
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js object class</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+   <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+</head>
+<body>
+
+	<script>
+	   
+
+      function love(a,b)
+      {
+      	this.name=a;
+      	this.age=b;
+      }
+
+       let anitha=new love("chinni",12) 
+       console.log(anitha);
+
+        let anit=new love("chin",22)
+       console.log(anit);
+
+        let ani=new love("chi",15)
+       console.log(ani);
+	</script>
+
+_________________________________________________
+
+<script>
+   let movie=new Object()
+
+         movie.director="rajamouli",
+         movie.name="RRR",
+         movie.hero="jr NTR",
+         movie.villan="rana",
+         movie["review"]="5 star",
+         
+         console.log(movie);
+</script>
+_________________________
+
+    <script>
+
+   function movie(a,b,c)
+        {
+            this.name=a,
+            this.age=b,
+            this.gender=c
+        }
+
+        let raja=new movie("anu",22,"male")
+ 
+    let chinni=Object.create(raja,{
+
+         name:{
+            value:"RRR"
+        },
+        director:{
+            value:"rajamouli"
+        },
+        herione:{
+            value:"anuska"
+        },
+        rating:{
+            value:"5 star"
+        },
+        collection:{
+            value:"1800cr"
+        },
+
+    })
+    console.log(chinni);
+          
+
+</script>
+___________________________________________
+
+<script>
+             function user(a,b,c,d)
+    {
+      this.name=a;
+      this.result=d;
+      this.color=b;
+      this.income=c;
+    }
+
+    let raja=new user("rajasekhar","white",300000,"pass")
+   // console.log(raja);
+
+     let anitha=new user("anitha","black","nothing","fail")
+
+      anitha.total="failed";
+      anitha["gender"]="female";
+    //console.log(anitha);
+
+     let chinni=new user("chinni","brown","1 rupee","pass")
+
+     chinni.income="no income";
+    //console.log(chinni);
+
+       
+         let love=Object.create(anitha)
+         console.log(love);
+         
+    </script>
+_________________________________________________________
+
+<script>
+      function user(a,b,c,d)
+    {
+      this.name=a;
+      this.result=d;
+      this.color=b;
+      this.income=c;
+    }
+
+    let raja=new user("rajasekhar","white",300000,"pass")
+   // console.log(raja);
+
+     let anitha=new user("anitha","black","nothing","fail")
+
+      anitha.total="failed";
+      anitha["gender"]="female";
+    //console.log(anitha);
+
+     let chinni=new user("chinni","brown","1 rupee","pass")
+
+     chinni.income="no income";
+    //console.log(chinni);
+
+       
+         let ra=Object.create(anitha,{
+            name:{
+                value:"RRR"
+            },
+            music:{
+                value:"AR rehaman"
+            },
+            hero:{
+                value:"JR NTR"
+            },
+            review:{
+                value:"5 star"
+            },
+
+           })
+           console.log(ra)
+
+
+</script>
+
+________________________________________________
+
+  <script>
+   function user(a,b,c,d)
+    {
+      this.name=a,
+       this.color=b,
+       this.income=c,
+      this.result=d
+      this.login=function (){
+                      
+                  console.log("hallo "+this.name+": "+"loged in successfuly"); 
+
+                     }
+    
+    }
+
+    let raja=new user("rajasekhar","white",300000,"pass");
+    let anitha=new user("anitha","black",350000,"pass");
+   
+   raja.login();
+   anitha.login();
+
+    </script>
+
+  _______________________________________________________
+
+  <script>
+   function user(a,b,c,d)
+    {
+      this.name=a,
+       this.color=b,
+       this.income=c,
+      this.result=d,
+      this.login=function (){
+                      
+                  console.log("hallo "+this.name+": "+"loged in successfuly"); 
+
+                     }
+    
+    }
+
+    let raja=new user("rajasekhar","white",300000,"pass");
+    let anitha=new user("anitha","black",350000,"pass");
+   
+     /*
+     for(key in raja){
+      console.log(key+": " +raja[key])
+     }
+     */
+
+console.log(Object.values(raja[keys]));
+console.log(Object.entries(raja[keys]));
+
+
+   raja.login();
+   anitha.login();
+   
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oject class</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+  <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+ <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+
+</head>
+ 
+<body>
+    
+    <script>
+        //object in class
+
+         class laptop {
+          constructor(a,b,c){
+            this.brand=a,
+            this.price=b,
+            this.ram=c
+          }
+       }
+
+  let lenovo = new laptop("lenovo",250000,"4gb")
+     console.log(lenovo); 
+   
+    </script>
+
+_______________________________________________
+
+
+<script>
+  //using function in class Object
+   
+    class laptop {
+          constructor(a,b,c){
+            this.brand=a,
+            this.price=b,
+            this.ram=c
+          }
+
+   updatedRam (yourram){
+      
+      this.ram=yourram
+
+    }
+ }
+
+  let lenovo = new laptop("lenovo",250000,"4gb")
+     console.log(lenovo); 
+
+     let dell = new laptop("dell",44000,"4gb")
+     dell.updatedRam("8gb")
+     console.log(dell); 
+</script>
+
+___________________________________________________________
+
+   <script>
+
+    //set function......................!!!!!! 
+
+      class mobile {
+          constructor(a,b,c){
+            this.brand=a,
+            this.price=b,
+            this.ram=c
+          }
+
+          set priceSet(b){
+            if(b<0)
+            {
+              alert("price can't be lessthan 0")
+            }
+            else{
+              this.price=b;
+            }
+          }
+        }
+
+        let samsung=new mobile("samsung",12000,"4gb")
+        samsung.priceSet="25000 rupees";
+      console.log(samsung)
+      
+
+   </script>
+
+   ______________________________________________________________
+
+
+       <script>
+        //get function......................!!!!!!!
+            
+        class mobile {
+          constructor(a,b,c){
+            this.brand=a,
+            this.price=b,
+            this.ram=c
+          }
+
+          get mobname(){
+             
+             return "mobile name: "+this.brand
+          }
+        }
+
+        let nokia=new mobile("nokia",16000,"4gb")
+      console.log(nokia)
+
+      let samsung=new mobile("samsung",12000,"4gb")
+      console.log(samsung)
+      
+       </script>
+
+___________________________________________________________________
+
+    <script>
+      //set function..................
+      class mobile{
+            constructor(a,b,c,d)
+            {
+              this.brand=a,
+             this.price=b,
+             this.ram=c,
+             this.storage=d
+            }
+
+            set name(a){
+               this.brand=a;
+            }
+
+            set money(b){
+              if(b<0){
+                alert("price is not avalible lessthan 0")
+              }
+              else{
+                this.price=b;
+              }
+            }
+
+              set name(c){
+               this.ram=c;
+            }
+          
+          //get function..................!!!!!!  
+            get mystorage(){
+              return "my storage :"+this.storage;
+            }
+      }
+       
+       let samsung=new mobile("samsung",25000,"4gb","120gb")
+         samsung.name="nokia"
+         samsung.money=32000;
+          samsung.ram="8gb";
+       console.log(samsung);
+
+      
+    </script>
+    
+</body>
+</html>

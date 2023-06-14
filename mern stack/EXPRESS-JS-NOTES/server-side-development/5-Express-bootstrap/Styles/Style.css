@@ -1,0 +1,14 @@
+*{
+    font-family: "comic sans MS",sans-serif;
+}
+body{
+    background: url('https://images.unsplash.com/photo-1482361046637-0226fdcfa3b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bGFkeXxlbnwwfHwwfHw%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+}
+.wrapper{
+    background: rgba(0, 0, 0,0.2);
+    height: 100vh;
+}

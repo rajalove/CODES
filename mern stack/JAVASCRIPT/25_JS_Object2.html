@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js object NEW keyword</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+  <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+ <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+  
+
+		
+</head>
+<body>
+   
+   <script>
+    /*
+
+    let movie=new Object()
+       console.log(movie)
+
+      */
+
+      //here,by using new keyword for object notation{}..................
+//________________________________________________________________________________
+
+
+   /*
+
+    let movie=new Object()
+
+       movie.name="tholi prema",
+       movie["director"]="sp balu",
+       movie.collection="120lakh",
+
+       movie["collection"]="1 rupee";
+
+       console.log(movie);
+
+   */
+
+  //__________________________________________________________________________-
+
+  /*
+
+    function user(a,b,c,d)
+    {
+      this.name=a;
+      this.result=d;
+      this.color=b;
+      this.income=c;
+    }
+
+    let raja=new user("rajasekhar","white",300000,"pass")
+    console.log(raja);
+
+     let anitha=new user("anitha","black","nothing","fail")
+    console.log(anitha);
+
+     let chinni=new user("chinni","brown","1 rupee","pass")
+    console.log(chinni);
+
+    let anu=new user("anu","black","3 rupees","pass")
+    console.log(anu);
+
+    let love=new user("anusri","black","unlimited","pass")
+    console.log(love);
+
+    */
+
+  //_______________________________________________________________________-
+    
+
+     function user(a,b,c,d)
+    {
+      this.name=a;
+      this.result=d;
+      this.color=b;
+      this.income=c;
+    }
+
+    let raja=new user("rajasekhar","white",300000,"pass")
+    console.log(raja);
+
+     let anitha=new user("anitha","black","nothing","fail")
+
+      anitha.total="failed";
+      anitha["gender"]="female";
+    console.log(anitha);
+
+     let chinni=new user("chinni","brown","1 rupee","pass")
+
+     chinni.income="no income";
+    console.log(chinni);
+
+   </script>
+</body>
+</html>

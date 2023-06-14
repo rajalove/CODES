@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>event listener</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+   <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+</head>
+<body>
+
+  <div class="display text-center">
+  	<button id="b1"class='btn btn-outline-white text-dark'>click here</button>
+  </div>
+
+<script>
+	let raja=document.getElementById('b1')
+	raja.addEventListener('click',sekhar)
+
+	 function sekhar()
+	 {
+	 	document.body.style.backgroundColor='orange';
+	 }
+
+</script>
+_________________________________________________________________________________
+
+//anonymous function
+  <div class="love text-center">
+  	<button id="b2"class='btn btn-outline-white text-dark'>click here</button>
+  </div>
+
+<script>
+	let naresh=document.getElementById('b2')
+	naresh.addEventListener('click',function()
+	 {
+	 	document.body.style.backgroundColor='green';
+	 })
+
+</script>
+
+___________________________________________________________________________________
+
+ <div class="hate text-center">
+  	<button id="b3"class='btn btn-outline-secondary text-dark'>click here</button>
+  </div>
+   <div class="form-group text-center">
+    NAME: <input id="b4"type="">
+   </div>
+
+<script>
+	let king=document.getElementById('b3')
+	king.addEventListener('click',killer)
+
+	 function killer()
+	 {
+	 	document.body.style.backgroundColor='yellow';
+	 }
+
+	 let minister=document.getElementById('b4')
+	minister.addEventListener('focus',enemy)
+
+	 function enemy()
+	 {
+	 	minister.style.backgroundColor='pink';
+	 }
+
+
+
+</script>
+
+</body>
+</html>

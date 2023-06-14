@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Contact Tab</title>
+        <style>
+            body
+            {
+                margin: 0px;
+            }
+            nav
+            {
+                background-color: black;
+                padding: 10px;
+            }
+            nav a
+            {
+                color: white;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/services">Services</a>
+        </nav>
+        <div>
+            <h2>Welcome to Contact Page</h2>
+        </div>
+    </body>
+</html>

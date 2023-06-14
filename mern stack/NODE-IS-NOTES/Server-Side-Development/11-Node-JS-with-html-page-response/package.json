@@ -1,0 +1,21 @@
+{
+  "name": "08-node-js-npm-module-gravatar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon Server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^5.2.3",
+    "gravatar": "^1.8.2",
+    "mdbootstrap": "^4.20.0",
+    "uuid": "^9.0.0"
+  }
+}
+

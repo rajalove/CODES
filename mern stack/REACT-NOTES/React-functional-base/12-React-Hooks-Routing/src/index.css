@@ -1,0 +1,24 @@
+*{
+    font-family:"comic sans MS",sans-serif;
+}
+div.landing-page{
+    background: url('https://wallpaperaccess.com/full/1196156.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+div.wrapper{
+    background: rgba(0,0,0,0.5);
+    height: 100vh;
+}
+div.loves img{
+    margin-top: -50px;
+    margin-left: 150px;
+}
+section.hearts{
+    background: url('https://images.pexels.com/photos/1034011/pexels-photo-1034011.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}

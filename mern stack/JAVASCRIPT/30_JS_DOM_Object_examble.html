@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>dom object example</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+    <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+   <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+
+</head>
+<body>
+  
+  
+   	<h2 id="display"class='text-center'>MESSAGE</h2>
+   	 
+       <div class="button text-center">
+       	<button onClick="Morning()"class='btn btn-primary'>Good morning</button>
+   	<button onClick="Afternoon()"class="btn btn-secondary">Good afternoon</button>
+   	<button onClick="Evening()"class='btn btn-success'>good evening</button>
+       </div>
+
+
+   	<script>
+   		//good morning.............!
+
+   		let Morning=()=>
+   		{
+   		let Sun=document.querySelector('#display')
+          Sun.innerText='good morning all';
+           Sun.style.color='blue';
+            Sun.style.backgroundColor='orange';
+            Sun.style.width='800px';
+            Sun.style.marginLeft='300px';
+   		}
+
+   	//good evening..........!
+
+         let Afternoon=()=>
+         {
+         	let Rise=document.querySelector('#display');
+         	 Rise.innerText='good evening all students';
+         	Rise.style.color='white';
+         	Rise.style.backgroundColor='black';
+         	Rise.style.width='800px';
+         	Rise.style.marginLeft='300px';
+         }
+
+     //good evening.........!
+
+     let Evening=()=>
+     {
+     	let Moon=document.querySelector('#display');
+     	Moon.innerText='good evening boys';
+     	Moon.style.color='white';
+     	Moon.style.backgroundColor='skyblue'
+     	Moon.style.width='800px';
+     	Moon.style.marginLeft='300px';
+
+     }
+     
+   	</script>
+  
+    
+</body>
+</html>

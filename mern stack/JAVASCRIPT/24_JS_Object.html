@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Js object</title>
+     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+     <link rel="stylesheet" href="bootstrap/js/bootstrap.js">
+     <link rel="stylesheet" type="text/css" href="MDB/css/mdb.css">
+     <link rel="stylesheet" type="text/css" href="MDB/css/bootstrap.css">
+     <link rel="stylesheet" type="text/css" href="MDB/css/style.css">
+    <link rel="stylesheet" href="D:\my practice\font6\css\all.css">
+
+		
+</head>
+<body>
+
+     <!-- <div id="love">
+
+     </div>
+     
+    <script>
+       
+    let movie=new Object()
+     movie.name='RRR';
+     movie.heros='NTR';
+     movie['director']='rajamouli';
+     movie['release']='2022';
+ 
+     console.log(movie);
+    </script>
+ 
+    <script>
+        document.write(JSON.stringify(movie))
+    <!-- </script> -->                                                   very very imp -->
+_________________________________________________________________________________________ 
+
+	<script>
+   	   
+       let movies={
+            name:"RRR",
+            release:2022,
+            director:"rajmouli",
+            viewer:"Rajasekhar"
+       } 
+       console.log(movies);
+
+   </script>
+
+   ____________________________________________________________________________
+
+   <script>
+   	   
+       let movies={
+            name:"RRR",
+            release:2022,
+            director:"rajmouli",
+            viewer:"Rajasekhar"
+       } 
+       console.log(movies["name"]);
+       console.log(movies.viewer)
+
+   </script>
+_______________________________________________________________________
+
+ <script>
+   	   
+       let movies={
+            name:"RRR",
+            release:2022,
+            director:"rajmouli",
+            viewer:"Rajasekhar"
+       } 
+       
+       movies["collection"]="200cr";
+       movies.viewer="anitha";
+        movies.budget="500cr";
+       movies.begining=2020;
+
+        console.log(movies);
+
+        //properties adding and changing the keys and values...
+
+   </script>
+
+  _____________________________________________________________________
+
+   
+  <script>
+   	   
+    function user(n,a,p)
+    {
+    	this.name=n;
+    	this.age=a;
+    	this.place=p;
+    }
+
+    anu=new user("anitha",40,"banglore");
+    console.log(anu);
+    anu["salary"]="300cr";
+ 
+
+
+   </script>
+</body>
+</html>

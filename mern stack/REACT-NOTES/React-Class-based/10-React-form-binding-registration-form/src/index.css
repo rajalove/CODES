@@ -1,0 +1,14 @@
+body{
+    font-family: "comic sans MS",sans-serif;
+   
+}
+
+.btn{
+    background:linear-gradient(45deg, violet,orange);
+}
+div.card-header,.card-footer
+{
+    background:linear-gradient(45deg, rgb(30, 12, 30),orange);
+    color: white;
+}
+

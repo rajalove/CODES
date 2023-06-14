@@ -1,0 +1,57 @@
+
+<html>
+ <head>
+  <title>CSS ANIMATIONS</title>
+  <style>
+   div
+   {
+    background:linear-gradient(45deg,orange,blue,green);
+    height:50px;
+    width:50px;
+    position:relative;
+
+    animation:square 2s linear 0s infinite normal;
+   }
+
+   @keyframes square 
+   {
+    0%
+    {
+     top:0px;
+     left:0px;
+     border-radius:0px;
+    }
+    25%
+    {
+     top:0px;
+     left:100px;
+     border-radius:30px 0px 0px 30px;
+    }
+    50%
+    {
+     top:100px;
+     left:100px;
+     border-radius:0px 30px 30px 0px;
+    }
+    75%
+    {
+     top:100px;
+     left:0px;
+     border-radius:0px 0px 30px 0px;
+    }
+    100%
+    {
+     top:0px;
+     left:0px;
+     border-radius:30px;
+    }
+   }
+
+  </style>
+ </head>
+ <body>
+  <div>
+   
+  </div>
+ </body>
+</html>

@@ -1,0 +1,21 @@
+*{
+    font-family: "comic sans MS",sans-serif;
+    
+   
+}
+.card-body img{
+    margin-top: -90px;
+}
+ul.rani li{
+    margin-right: 40px;
+  
+}
+div.group2 li{
+    margin-right: 40px;
+}
+body{
+    background:linear-gradient(45deg,lightgreen,rgb(232, 232, 110));
+    background-repeat: no-repeat;
+    background-size:100vh ;
+    background-size: cover;
+}

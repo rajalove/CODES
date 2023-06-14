@@ -1,0 +1,48 @@
+import React from 'react';
+import ClientCard from './advanced/ClientCard';
+import ServerCard from './advanced/ServerCard';
+import './App.css';
+import ParentCards from './intermediate/Intermediates/ParentCards';
+import ParentCard from './intermediate/ParentCard';
+import Parent from './simple/Parent';
+
+function App(){
+
+  return (
+
+     <React.Fragment>
+           <nav className="navbar navbar-warning bg-warning navbar-expand-sm">
+            <a href="/"className='navbar-brand'>Component - Interaction</a>
+        </nav> 
+
+     <Parent/>
+     <ParentCard/>
+     <ParentCards/>
+
+     {/* ................advanced ..................*/}
+
+     <section className="p-3">
+      <div className="container">
+         <div className="row">
+            <div className="col-md-4">
+
+               <ClientCard/>
+
+            </div>
+
+            <div className="col-md-4">
+
+               <ServerCard/>
+
+            </div>
+         </div>
+      </div>
+     </section>
+
+        
+     </React.Fragment>
+
+  );
+}
+
+export default App;
